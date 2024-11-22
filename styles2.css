@@ -1,0 +1,71 @@
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+/* Contenedor para el título en la parte superior */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0; /* Espaciado alrededor del título */
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.3); Fondo transparente pero con un toque */
+    z-index: 1; /* Para que quede por encima del fondo */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(193, 34, 34);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+}
+
+/* Imagen de fondo */
+.background {
+    background-image: url('media/fondo_pag2.gif');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Fijo para que nunca cambie */
+}
+
+/* Cuadro centrado */
+.center-box {
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+}
+
+/* Imagen en el centro */
+#center-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.new-image {
+    position: absolute;  /* Las imágenes nuevas se apilarán */
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
